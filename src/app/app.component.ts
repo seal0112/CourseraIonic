@@ -8,6 +8,7 @@ import { AboutPage } from '../pages/about/about';
 import { MenuPage } from '../pages/menu/menu';
 import { ContactPage } from '../pages/contact/contact';
 import { DishdetailPage } from '../pages/dishdetail/dishdetail';
+import { FavoritesPage } from '../pages/favorites/favorites';
 
 @Component({
   templateUrl: 'app.html'
@@ -27,7 +28,8 @@ export class MyApp {
       { title: 'Home', icon: 'home', component: HomePage },
       { title: 'About Us', icon: 'information-circle', component: AboutPage },
       { title: 'Menu', icon: 'list-box', component: MenuPage },
-      { title: 'Contact Us', icon: 'contact', component: ContactPage }
+      { title: 'Contact Us', icon: 'contact', component: ContactPage },
+      { title: 'My Favorite', icon: 'heart', component: FavoritesPage }
     ];
 
   }
