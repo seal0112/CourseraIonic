@@ -18,7 +18,7 @@ import { Dish } from '../../shared/dish';
 })
 export class FavoritesPage implements OnInit {
 
-  favorite: Dish[];
+  favorites: Dish[];
   errMess: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
