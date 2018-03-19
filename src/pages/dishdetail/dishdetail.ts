@@ -30,7 +30,9 @@ export class DishdetailPage {
     private favoriteservice: FavoriteProvider,
     private toastCtrl: ToastController,
     private actionSheetCtrl: ActionSheetController,
-    private modalCtrl: ModalController) {
+    private modalCtrl: ModalController,
+    ) {
+
     this.dish = navParams.get('dish');
     this.favorite = favoriteservice.isFavorite(this.dish.id);
     this.numcomments = this.dish.comments.length;

@@ -28,7 +28,7 @@ export class LoginPage {
 
   	  storage.get('user').then(user => {
         if (user) {
-          console.log(user);
+          console.log(typeof user);
           this.user = user;
           this.loginForm
             .patchValue({
